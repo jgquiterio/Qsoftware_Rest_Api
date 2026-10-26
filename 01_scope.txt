@@ -1,0 +1,31 @@
+PROJETO: PRJ-0003_Qsoftware_Rest_Api
+
+1. OBJETIVO
+Desenvolver uma API REST simples para gerenciamento de tarefas, utilizando Laravel e PHP, como projeto de portfólio da Qsoftware para apresentação a clientes no Upwork.
+
+2. FUNCIONALIDADES
+- Cadastrar tarefas.
+- Listar tarefas.
+- Consultar tarefa por ID.
+- Atualizar tarefas.
+- Excluir tarefas.
+
+3. TECNOLOGIAS
+- PHP
+- Laravel
+- SQLite
+- Git
+- GitHub
+- Postman
+
+4. ESCOPO
+A API permitirá operações CRUD sobre tarefas, validação dos dados recebidos e retorno de códigos HTTP apropriados.
+
+5. FORA DO ESCOPO
+- Interface gráfica.
+- Autenticação de usuários.
+- Integrações com serviços externos.
+- Funcionalidades avançadas desnecessárias para o portfólio.
+
+6. RESULTADO ESPERADO
+Uma API REST funcional, organizada, testada e documentada, com código publicado no GitHub para demonstração de competências em desenvolvimento backend com Laravel.

@@ -1,0 +1,41 @@
+PROJETO: PRJ-0003_Qsoftware_Rest_Api
+
+1. REQUISITOS FUNCIONAIS
+
+RF01 - Cadastrar uma tarefa.
+RF02 - Listar todas as tarefas.
+RF03 - Consultar uma tarefa pelo ID.
+RF04 - Atualizar uma tarefa existente.
+RF05 - Excluir uma tarefa.
+RF06 - Validar os dados recebidos nas requisições.
+RF07 - Retornar respostas JSON.
+RF08 - Retornar códigos HTTP adequados para cada operação.
+
+2. REQUISITOS TÉCNICOS
+
+RT01 - Utilizar PHP e Laravel.
+RT02 - Utilizar SQLite como banco de dados.
+RT03 - Seguir a estrutura padrão do Laravel.
+RT04 - Implementar endpoints REST.
+RT05 - Utilizar migrations para criar a estrutura do banco.
+RT06 - Utilizar Eloquent ORM para acesso aos dados.
+RT07 - Manter o código versionado no Git e publicado no GitHub.
+RT08 - Documentar a instalação e utilização no README.md.
+RT09 - Testar os endpoints utilizando Postman.
+RT10 - Disponibilizar documentação dos endpoints.
+
+3. REGRAS DE NEGÓCIO
+
+RN01 - Cada tarefa deve possuir título e descrição.
+RN02 - Cada tarefa deve possuir um status.
+RN03 - O título é obrigatório.
+RN04 - O status deve aceitar apenas valores previamente definidos.
+RN05 - Uma tarefa inexistente deve retornar HTTP 404.
+
+4. CRITÉRIOS DE ACEITAÇÃO
+
+CA01 - Deve ser possível cadastrar tarefas.
+CA02 - Deve ser possível consultar, listar, atualizar e excluir tarefas.
+CA03 - Dados inválidos devem retornar mensagens de validação.
+CA04 - As respostas da API devem utilizar JSON.
+CA05 - Os endpoints devem funcionar conforme documentado.

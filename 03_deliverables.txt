@@ -1,0 +1,39 @@
+PROJETO: PRJ-0003_Qsoftware_Rest_Api
+
+1. CÓDIGO-FONTE
+- Projeto desenvolvido em Laravel e PHP.
+- Código organizado conforme os padrões do framework.
+- Operações CRUD para gerenciamento de tarefas.
+
+2. BANCO DE DADOS
+- Banco de dados SQLite.
+- Migration para criação da tabela de tarefas.
+- Model Eloquent para acesso aos dados.
+
+3. API REST
+- Endpoint para listar tarefas.
+- Endpoint para consultar tarefa por ID.
+- Endpoint para cadastrar tarefa.
+- Endpoint para atualizar tarefa.
+- Endpoint para excluir tarefa.
+- Validação dos dados e respostas JSON.
+
+4. TESTES
+- Testes dos endpoints utilizando Postman.
+- Verificação dos códigos HTTP.
+- Validação de dados obrigatórios.
+- Verificação do tratamento de tarefas inexistentes.
+
+5. DOCUMENTAÇÃO
+- README.md com instruções de instalação e execução.
+- Documentação dos endpoints e exemplos de requisições.
+
+6. VERSIONAMENTO
+- Repositório Git.
+- Código publicado no GitHub.
+
+7. VALIDAÇÃO FINAL
+- Verificação de funcionamento dos endpoints.
+- Revisão do código-fonte.
+- Conferência da documentação.
+- Projeto pronto para apresentação no portfólio do Upwork.
