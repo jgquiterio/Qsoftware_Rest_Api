@@ -1,6 +1,6 @@
 # Qsoftware REST API
 
-A simple RESTful API built with Laravel and PHP for task management.
+A RESTful API for task management, developed with Laravel 12 and PHP 8.2.
 
 ## Features
 
@@ -11,96 +11,117 @@ A simple RESTful API built with Laravel and PHP for task management.
 - Delete tasks
 - Input validation
 - JSON responses
-- Appropriate HTTP status codes
+- Standard HTTP status codes
 
 ## Tech Stack
 
-- PHP
-- Laravel
+- PHP 8.2
+- Laravel 12
 - SQLite
 - Eloquent ORM
-- Git and GitHub
-- Postman
+- REST API
+- cURL for endpoint testing
 
 ## Requirements
 
-- PHP version compatible with the selected Laravel version
-- Composer
-- SQLite support enabled in PHP
+- PHP 8.2+
+- Composer 2.8+
+- SQLite
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository:
 
-   ```bash
-   git clone YOUR_REPOSITORY_URL
-   ```
+```bash
+git clone https://github.com/jgquiterio/Qsoftware_Rest_Api
+```
 
-2. Navigate to the project directory:
+Navigate to the project directory:
 
-   ```bash
-   cd PRJ-0003_Qsoftware_Rest_Api
-   ```
+```bash
+cd PRJ-0003_Qsoftware_Rest_Api
+```
 
-3. Install dependencies:
+Install dependencies:
 
-   ```bash
-   composer install
-   ```
+```bash
+composer install
+```
 
-4. Configure the environment:
+Configure the environment:
 
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-5. Configure SQLite in your `.env` file.
+Create the SQLite database:
 
-6. Run database migrations:
+```bash
+touch database/database.sqlite
+```
 
-   ```bash
-   php artisan migrate
-   ```
+Configure `.env`:
 
-7. Start the development server:
+```env
+DB_CONNECTION=sqlite
+```
 
-   ```bash
-   php artisan serve
-   ```
+Run migrations:
+
+```bash
+php artisan migrate
+```
+
+Start the development server:
+
+```bash
+php artisan serve
+```
+
+API base URL:
+
+`http://127.0.0.1:8000/api`
 
 ## API Endpoints
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /api/tasks | List all tasks |
-| GET | /api/tasks/{id} | Retrieve a task |
-| POST | /api/tasks | Create a task |
-| PUT | /api/tasks/{id} | Update a task |
-| DELETE | /api/tasks/{id} | Delete a task |
+|---|---|---|
+| POST | `/tasks` | Create a task |
+| GET | `/tasks` | List all tasks |
+| GET | `/tasks/{id}` | Retrieve a task |
+| PUT | `/tasks/{id}` | Update a task |
+| DELETE | `/tasks/{id}` | Delete a task |
 
-## Example Request
-
-Create a task:
+## Task Structure
 
 ```json
 {
+  "id": 1,
   "title": "Complete project",
-  "description": "Finish the REST API portfolio project",
-  "status": "pending"
+  "description": "Finish the REST API project",
+  "status": "pending",
+  "created_at": "2026-11-02T12:00:00.000000Z",
+  "updated_at": "2026-11-02T12:00:00.000000Z"
 }
 ```
 
-## Testing
+## Validation Rules
 
-API endpoints can be tested using Postman.
+- `title`: required string, maximum 255 characters.
+- `description`: optional string.
+- `status`: optional; accepted values are `pending` and `completed`.
 
-## Purpose
+## HTTP Status Codes
 
-This project demonstrates REST API development with Laravel, including CRUD operations, data validation, database integration, and HTTP response handling.
+- `200 OK`: Successful request.
+- `201 Created`: Resource successfully created.
+- `204 No Content`: Resource successfully deleted.
+- `404 Not Found`: Resource not found.
+- `422 Unprocessable Entity`: Validation error.
 
 ## Author
 
-Qsoftware
+**Qsoftware**
 
-GitHub: https://github.com/jgquiterio
+Software Development & REST API Solutions.
